@@ -1,51 +1,49 @@
-/* --- Reset --- */
+/* Basis-Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* --- Basis-Layout --- */
+/* Body-Styles */
 body {
   font-family: Arial, sans-serif;
   background: #f5f5f5;
   padding: 20px;
 }
 
-/* Container zentriert und mit max. Breite */
+/* Container */
 .container {
   max-width: 800px;
   margin: 0 auto;
-  background: #fff;
+  background: #ffffff;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Überschriften */
-h1, h2 {
+h1,
+h2 {
   text-align: center;
   margin-bottom: 20px;
 }
 
-/* Formulare */
+/* Formular-Styles */
 form {
   margin-bottom: 30px;
 }
 
-/* Formulargruppen */
 .form-group {
   margin-bottom: 15px;
 }
 
-/* Label */
 label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
 
-/* Eingabefelder */
 input[type="text"],
 input[type="date"],
 input[type="time"],
@@ -53,7 +51,7 @@ input[type="number"],
 input[type="password"] {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-radius: 4px;
 }
 
@@ -63,31 +61,33 @@ button {
   padding: 10px;
   background-color: #007bff;
   border: none;
-  color: #fff;
+  color: #ffffff;
   font-size: 1rem;
   border-radius: 4px;
   cursor: pointer;
 }
+
 button:hover {
   background-color: #0056b3;
 }
 
-/* Trennlinie */
+/* Horizontaler Trenner */
 hr {
   margin: 30px 0;
 }
 
-/* Admin-Bereich (zunächst ausgeblendet) */
+/* Admin-Bereich (standardmäßig ausgeblendet) */
 #adminPanel {
   display: none;
   margin-top: 20px;
 }
 
-/* Liste für Arbeitszeiten */
+/* Liste im Admin-Bereich */
 #workHoursList {
   list-style: none;
   padding: 0;
 }
+
 #workHoursList li {
   background: #e9ecef;
   padding: 10px;
@@ -95,8 +95,8 @@ hr {
   border-radius: 4px;
 }
 
-/* --- Responsive Design --- */
-/* Für Smartphones und kleine Bildschirme */
+/* Responsive Design */
+/* Für mobile Geräte (max. 600px) */
 @media (max-width: 600px) {
   body {
     padding: 10px;
@@ -109,7 +109,7 @@ hr {
   }
 }
 
-/* Für Tablets (bis max. 1024px) */
+/* Für Tablets (zwischen 601px und 1024px) */
 @media (min-width: 601px) and (max-width: 1024px) {
   .container {
     max-width: 90%;
